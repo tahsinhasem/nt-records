@@ -5,6 +5,8 @@ import dayjs from "dayjs";
 
 const AuthContext = createContext();
 
+const base_url = "http://54.164.133.92:8000";
+
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
@@ -33,7 +35,7 @@ export const AuthProvider = ({ children }) => {
         
         let username = e.target.username.value;
         let password = e.target.password.value;
-        let response = await fetch('http://localhost:8000/api/token/', {
+        let response = await fetch(`${base_url}/api/token/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

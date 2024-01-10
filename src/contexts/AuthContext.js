@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 
 const AuthContext = createContext();
 
-const base_url = "http://54.164.133.92:8000";
+const base_url = "http://54.196.12.66:8000";
 
 export default AuthContext;
 
